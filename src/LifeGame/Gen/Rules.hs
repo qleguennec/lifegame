@@ -3,9 +3,7 @@ module LifeGame.Gen.Rules (
 ) where
 
 import LifeGame.Data.Cell (Cell, birth, death)
-import LifeGame.Data.CellGrid (CellGrid, alives)
-
-import Math.Geometry.Grid (neighbours)
+import LifeGame.Data.CellGrid (CellGrid, alives, neighbours)
 
 import Data.List (intersect)
 

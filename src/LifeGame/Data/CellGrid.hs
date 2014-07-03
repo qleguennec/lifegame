@@ -5,6 +5,11 @@ module LifeGame.Data.CellGrid (
     , cellGrid
     , randCellGrid
 
+    , indices
+    , neighbours
+    , distance
+    , directionTo
+
     , searchCell
     , alives
     , deads
