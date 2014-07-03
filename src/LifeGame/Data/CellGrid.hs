@@ -13,6 +13,7 @@ module LifeGame.Data.CellGrid (
     , searchCell
     , alives
     , deads
+    , population
 ) where
 
 import LifeGame.Data.Cell (Cell(..), State(..), setState, isAlive, isDead)
@@ -63,3 +64,6 @@ alives = filter (isAlive) . indices
 
 deads :: CellGrid -> [Cell]
 deads = filter (isDead) . indices
+
+population :: CellGrid -> Integer
+population = fromIntegral . length . alives
