@@ -1,4 +1,4 @@
-module LifeGame.Iter.Rules (
+module LifeGame.Gen.Rules (
     ruler
 ) where
 

@@ -45,13 +45,6 @@ extra-source-files:  README.md
 -- Constraint on the version of Cabal needed to build this package.
 cabal-version:       >=1.10
 
-test-suite Tests
-  hs-source-dirs:      test
-  main-is:             tests.hs
-  Type:                exitcode-stdio-1.0
-  build-depends:       base >=4.7 && <4.8
-                       , lifegame
-
 -- LifeGame library
 library
   ghc-options:         -Wall
@@ -59,10 +52,10 @@ library
   -- Modules exported by the library.
   exposed-modules:     LifeGame.Data.Cell
                        , LifeGame.Data.CellGrid
-                       , LifeGame.Iter.Iter
+                       , LifeGame.Gen.Iter
   
   -- Modules included in this library but not exported.
-  other-modules:       LifeGame.Iter.Rules
+  other-modules:       LifeGame.Gen.Rules
   
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:    
